@@ -22,11 +22,7 @@ def index():
 
 @app.route("/router/<ip>", methods=["GET"])
 def get_router(ip):
-    router = (
-        db.interface_status.find({"router_ip": ip})
-        .sort("timestamp", -1)
-        .limit(3)
-    )
+    router = db.interface_status.find({"router_ip": ip}).sort("timestamp", -1).limit(3)
     return render_template(
         "router_detail.html",
         router_ip=ip,
