@@ -20,4 +20,4 @@ spec:
             - containerPort: 8080
           envFrom:
             - secretRef:
-                name: "som12345" # ชื่อ secret ให้ตรงกับที่เราสร้าง secret ใน rancher
+                name: som12345
