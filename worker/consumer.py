@@ -37,4 +37,4 @@ def consume(host):
 
 
 if __name__ == "__main__":
-    consume("rabbitmq")
+    consume(os.getenv("RABBITMQ_HOST"))
