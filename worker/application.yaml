@@ -6,9 +6,9 @@ metadata:
 spec:
   project: ipa2025
   source:
-    repoURL: 'https://github.com/<username>/ipa2025-msapp'
+    repoURL: 'https://github.com/somchoonn/ipa2025-msapp'
     targetRevision: HEAD
-    path: worker/manifests
+    path: worker/manifest
   destination:
     server: https://kubernetes.default.svc
     namespace: ipa2025
