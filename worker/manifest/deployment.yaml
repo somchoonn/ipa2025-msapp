@@ -18,7 +18,7 @@ spec:
           image: fewza49144/worker:latest
           envFrom:
             - secretRef:
-                name: "________"
+                name: som12345
           resources:
             requests:
               cpu: "50m"
